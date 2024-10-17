@@ -54,13 +54,10 @@ public class LinearCalculator{
         int temp = y1*-1;
         if (slope() == -999.99){
             return -999.99;
-        } 
-        else if (temp >= 0){
+        } else {
             return roundedToHundredth((x1 * -1 * slope()) - temp);//using point-slope form to calculate the y-intercept
-        } else if (temp < 0){
-            return roundedToHundredth((x1 * -1 * slope()) - temp);
         } 
-        return -999.99;
+        
     }
 
     //slope() -> returns a double. 
